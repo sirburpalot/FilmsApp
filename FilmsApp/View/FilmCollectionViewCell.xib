@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilmCell" id="ZGB-Cf-JtB" customClass="FilmCollectionViewCell" customModule="FilmsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="173" height="334"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ndc-Qj-Mk9">
+                <rect key="frame" x="0.0" y="0.0" width="173" height="334"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="oPX-jb-EC5">
+                        <rect key="frame" x="8" y="7" width="157" height="320"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNM-Sc-Xdu">
+                                <rect key="frame" x="0.0" y="0.0" width="154" height="231"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="film" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RRr-AN-MPm">
+                                        <rect key="frame" x="0.0" y="1.6666666666666572" width="154" height="228"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                    </imageView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b95-rg-WLF">
+                                        <rect key="frame" x="129" y="-3" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Dkd-7L-fHS"/>
+                                            <constraint firstAttribute="width" constant="32" id="cJs-bG-klc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="" cornerStyle="capsule">
+                                            <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                                            <color key="baseForegroundColor" systemColor="secondaryLabelColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="CloseButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deletePressed:" destination="ZGB-Cf-JtB" eventType="touchUpInside" id="alO-U9-2td"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="3tn-YT-Dgd"/>
+                                    <constraint firstAttribute="height" constant="231" id="6Pb-TH-FMj"/>
+                                    <constraint firstItem="b95-rg-WLF" firstAttribute="top" secondItem="vNM-Sc-Xdu" secondAttribute="top" constant="-3" id="8B2-bs-R7o"/>
+                                    <constraint firstAttribute="bottom" secondItem="RRr-AN-MPm" secondAttribute="bottom" id="8nl-Dg-dIA"/>
+                                    <constraint firstAttribute="trailing" secondItem="b95-rg-WLF" secondAttribute="trailing" constant="-7" id="VrS-NN-STA"/>
+                                    <constraint firstItem="RRr-AN-MPm" firstAttribute="top" secondItem="vNM-Sc-Xdu" secondAttribute="top" id="jxf-e0-RpM"/>
+                                    <constraint firstItem="RRr-AN-MPm" firstAttribute="leading" secondItem="vNM-Sc-Xdu" secondAttribute="leading" id="qRN-A4-n5E"/>
+                                    <constraint firstAttribute="trailing" secondItem="RRr-AN-MPm" secondAttribute="trailing" id="wVc-p6-s6H"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="l3f-cc-coe">
+                                <rect key="frame" x="0.0" y="234" width="157" height="86"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDo-DX-0pd">
+                                        <rect key="frame" x="0.0" y="0.0" width="36.333333333333336" height="20.333333333333332"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="CellFilmTitleLabel"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x33-hB-v0f">
+                                        <rect key="frame" x="0.0" y="21.333333333333314" width="40.666666666666664" height="20.333333333333329"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="CellReleaseYearLabel"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★ 0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4J-HV-thG">
+                                        <rect key="frame" x="0.0" y="42.666666666666686" width="45.333333333333336" height="20.333333333333329"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="CellRatingLabel"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aw-gq-BBP" userLabel="Filler">
+                                        <rect key="frame" x="0.0" y="64" width="157" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="87d-p9-hFS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="157" id="vZ7-bi-C2g"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oPX-jb-EC5" firstAttribute="top" secondItem="ndc-Qj-Mk9" secondAttribute="top" constant="7" id="U3p-Q5-BZB"/>
+                    <constraint firstAttribute="trailing" secondItem="oPX-jb-EC5" secondAttribute="trailing" constant="8" id="h4y-tP-zYz"/>
+                    <constraint firstItem="oPX-jb-EC5" firstAttribute="leading" secondItem="ndc-Qj-Mk9" secondAttribute="leading" constant="8" id="lWk-cU-KT3"/>
+                    <constraint firstAttribute="bottom" secondItem="oPX-jb-EC5" secondAttribute="bottom" constant="7" id="upv-fs-zDE"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <size key="customSize" width="173" height="376"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="FilmCell"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="closeButton" destination="b95-rg-WLF" id="UiF-S8-OjK"/>
+                <outlet property="filmTitleLabel" destination="VDo-DX-0pd" id="J4C-Mx-LUm"/>
+                <outlet property="posterPreviewImageView" destination="RRr-AN-MPm" id="xRb-sg-rzd"/>
+                <outlet property="ratingLabel" destination="u4J-HV-thG" id="Ujp-Ny-2p3"/>
+                <outlet property="releaseYearLabel" destination="x33-hB-v0f" id="17g-hq-7eN"/>
+            </connections>
+            <point key="canvasLocation" x="217.55725190839695" y="102.11267605633803"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="film" catalog="system" width="128" height="93"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

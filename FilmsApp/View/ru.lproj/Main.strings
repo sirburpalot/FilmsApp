@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Rating"; ObjectID = "1hs-eQ-urI"; */
+"1hs-eQ-urI.text" = "Оценка";
+
+/* Class = "UILabel"; text = "Favorite Films"; ObjectID = "5YI-n4-Pnm"; */
+"5YI-n4-Pnm.text" = "Любимые фильмы";
+
+/* Class = "UILabel"; text = "Film Title"; ObjectID = "5md-dP-cQs"; */
+"5md-dP-cQs.text" = "Заголовок фильма";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "6KC-Lw-9jk"; */
+"6KC-Lw-9jk.text" = "Описание";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7dw-kj-k0s"; */
+"7dw-kj-k0s.normalTitle" = "Кнопка";
+
+/* Class = "UINavigationItem"; title = "FilmsApp"; ObjectID = "BT9-Jn-PNG"; */
+"BT9-Jn-PNG.title" = "FilmsApp";
+
+/* Class = "UILabel"; text = "Release Year"; ObjectID = "Dik-sp-YER"; */
+"Dik-sp-YER.text" = "Год выпуска";
+
+/* Class = "UILabel"; text = "Nothing here yet."; ObjectID = "FrU-Vm-bCf"; */
+"FrU-Vm-bCf.text" = "Здесь пока ничего нет.";
+
+/* Class = "UILabel"; text = "2012"; ObjectID = "HD3-fi-W2n"; */
+"HD3-fi-W2n.text" = "2012";
+
+/* Class = "UILabel"; text = "Pictures"; ObjectID = "QFY-Lw-Os0"; */
+"QFY-Lw-Os0.text" = "Фото";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "TDs-YC-zeO"; */
+"TDs-YC-zeO.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "★ 8,9"; ObjectID = "j2V-Sd-jVK"; */
+"j2V-Sd-jVK.text" = "★ 8,9";

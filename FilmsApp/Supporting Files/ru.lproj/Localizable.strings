@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  FilmsApp
+
+  Created by Boris Kotov on 31.10.2023.
+  
+*/
+
+"Search Film" = "Поиск фильма";
+"Close" = "Закрыть";
+"Sort By" = "Сортировка";
+"Title (asc.)" = "Название (по возр.)";
+"Title (desc.)" = "Название (по убыв.)";
+"Newest First" = "Сначала новые";
+"Oldest First" = "Сначала старые";
+"Highest Rated" = "Сначала с высокой оценкой";
+"Lowest Rated" = "Сначала с низкой оценкой";

@@ -1,0 +1,34 @@
+PODS:
+  - Cache (6.0.0)
+  - Imaginary (5.0.0):
+    - Cache (~> 6.0.0)
+  - Lightbox (2.5.0):
+    - Imaginary (~> 5.0.0)
+  - Realm (10.37.0):
+    - Realm/Headers (= 10.37.0)
+  - Realm/Headers (10.37.0)
+  - RealmSwift (10.37.0):
+    - Realm (= 10.37.0)
+
+DEPENDENCIES:
+  - Lightbox
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - Cache
+    - Imaginary
+    - Lightbox
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
+  Imaginary: cf5e3a7dd6ab1dcbd47ba8ce5edf2307c4e99eb3
+  Lightbox: cc3d5124f024fa8197fd23f913160db1c61a1852
+  Realm: 9c5fc6f8f5cb70b299f2e3064d2b9f6cb0f1523d
+  RealmSwift: 7be7bb45911c16400dd1bfce3a01764ecb4cae7a
+
+PODFILE CHECKSUM: 7060c43f3a79b44151df4c7a296ecfbf390948a2
+
+COCOAPODS: 1.12.1
